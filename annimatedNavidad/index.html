@@ -11,20 +11,13 @@
         <h1 class="title">Web de Navidad Animada</h1>
         <button id="translateButton">Traducir</button>
     </header>
+    <br><br>
+    <button id="verSec" onclick="seeSect()">Description</button>
+    <br><br><br><br><br>
+    <section id="description">
+        <aside>Ver primer annimación</aside>
 
-    <script>
-        // Fonction de traduction
-        function translate(){
-            let title = document.querySelector('.title');
-            if (title.innerHTML == "Web de Navidad Animada") {
-                title.innerHTML = "Animated Christmas Page";
-            } else {
-                title.innerHTML = "Web de Navidad Animada";
-            }
-        }
-
-        // Ajouter un écouteur d'événements sur le bouton
-        document.getElementById('translateButton').addEventListener('click', translate);
-    </script>
+    </section>
+    <script src="script.js" defer></script>
 </body>
 </html>
