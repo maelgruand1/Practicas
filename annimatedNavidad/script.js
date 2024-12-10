@@ -1,5 +1,8 @@
 function translate(){
     let title = document.querySelector('.title');
-    title.style.transform = 'translateY(0)';
-    title.style.transition = 'all 1s ease-in-out';
+    if (title.innerHTML == "Web de Navidad Animada") {
+        title.innerHTML = "Animated Christmas Page";
+    } else {
+        title.innerHTML = "Web de Navidad Animada";
+    }
 }
